@@ -23,9 +23,9 @@ Uiteindelijk zal deze code gepushed worden naar een webserver en moeten we dan t
 
 ### Login systeem
 
-- **Paswoord beveiliging dmv van de CRYPT functie van PHP**
+- **Paswoord beveiliging dmv van de CRYPT functie van PHP**:
   Nu worden de paswoorden als "plain text" in de databank opgeslaan. Het is beter om deze paswoorden te verbergen. Daarom gaan we ze encrypteren met een speciaal algoritme. Dit moeten we dus doen voordat we de paswoorden in de databank steken, dus bij de *registratie* van de gebruiker.
-- **Login gegevens controleren**
+- **Login gegevens controleren**:
   Bij het verzenden van het login formulieren moeten we eerst *valideren* dat de velden die verstuurd worden niet leeg zijn. Dan moeten we in de databank de gegevens van het gegeven emailadres gaan opzoeken. Indien we deze gegevens gevonden hebben moeten we controleren of het paswoord dat we in het formulier ontvangen overeenkomt met het paswoord in de databank. Indien dat zo is kunnen we de gebruiker inloggen dmv van een *$_SESSION['user']* variabele.
 
 ### Flash messages
