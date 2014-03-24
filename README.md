@@ -17,24 +17,29 @@ Dan kan elk groepje de code terug downloaden zodat iedereen terug "up to date" i
  
 Uiteindelijk zal deze code gepushed worden naar een webserver en moeten we dan tot een werkend geheel komen.
 
+## Taken
+
 **Hier volgen de verschillende taken die uitgevoerd moeten worden:**
 
-## Login systeem
+### Login systeem
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, voluptatibus, harum fugit eligendi quidem quia quod provident velit a quos officia pariatur magni nesciunt veniam ut beatae enim ad tempora.
+- **Paswoord beveiliging dmv van de CRYPT functie van PHP**
+  Nu worden de paswoorden als "plain text" in de databank opgeslaan. Het is beter om deze paswoorden te verbergen. Daarom gaan we ze encrypteren met een speciaal algoritme. Dit moeten we dus doen voordat we de paswoorden in de databank steken, dus bij de *registratie* van de gebruiker.
+- **Login gegevens controleren**
+  Bij het verzenden van het login formulieren moeten we eerst *valideren* dat de velden die verstuurd worden niet leeg zijn. Dan moeten we in de databank de gegevens van het gegeven emailadres gaan opzoeken. Indien we deze gegevens gevonden hebben moeten we controleren of het paswoord dat we in het formulier ontvangen overeenkomt met het paswoord in de databank. Indien dat zo is kunnen we de gebruiker inloggen dmv van een *$_SESSION['user']* variabele.
 
-## Flash messages
+### Flash messages
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, quibusdam, dolor, animi doloribus vitae in atque perferendis sed officiis dolore quam eveniet porro facere obcaecati quia ea distinctio sapiente architecto.
 
-## Back-end - CRUD systeem
+### Back-end - CRUD systeem
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, porro et eius sit facere voluptate quos ipsa facilis ut saepe! Recusandae, eum nihil corporis nesciunt eos rerum quaerat rem esse?
 
-## Front-end
+### Front-end
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, molestiae, sed modi adipisci provident quae assumenda earum similique illum saepe minus incidunt nostrum possimus facilis beatae suscipit nam ullam a!
 
-## Extra's
+### Extra's
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, explicabo, quia magnam suscipit totam quibusdam amet autem a mollitia magni expedita sunt reiciendis aperiam quod odit esse harum natus ratione.
