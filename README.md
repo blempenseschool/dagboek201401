@@ -1,11 +1,11 @@
 # Project Dagboek
 
-1. Inleiding
-2. Login systeem
-3. Flash messages
-4. Back-end - CRUD systeem
-5. Front-end
-6. Extra's
+1. [Inleiding][inleiding]
+2. [Login systeem][login-systeem]
+3. [Flash messages][flash-messages]
+4. [Back-end - CRUD systeem][back-end---crud-systeem]
+5. [Front-end][front-end]
+6. [Extra's][extras]
 
 ## Inleiding
 
@@ -19,14 +19,21 @@ Uiteindelijk zal deze code gepushed worden naar een webserver en moeten we dan t
 
 ## Taken
 
+Elk groepje zal enkele taken aangewezen krijgen. Probeer niet onmiddelijk te programmeren maar denk eerst even na over wat er moet gebeuren en hoe je dit zou kunnen vertalen naar PHP. Begin met commentaar code te schrijven die beschrijft wat de code moet doen. Vertaal deze commentaar code dan stap voor stap naar PHP code. Zorg ook dat je elke stap voldoende documenteert adhv commentaar zodat de volgende groep snel jouw code kan begrijpen en hierop kan verderwerken.
+
 **Hier volgen de verschillende taken die uitgevoerd moeten worden:**
 
 ### Login systeem
 
-- **Paswoord beveiliging dmv van de CRYPT functie van PHP**:
+Het 
+
+- **Paswoord beveiliging dmv van de CRYPT functie van PHP** - registreer.php
+
   Nu worden de paswoorden als "plain text" in de databank opgeslaan. Het is beter om deze paswoorden te verbergen. Daarom gaan we ze encrypteren met een speciaal algoritme. Dit moeten we dus doen voordat we de paswoorden in de databank steken, dus bij de *registratie* van de gebruiker.
-- **Login gegevens controleren**:
-  Bij het verzenden van het login formulieren moeten we eerst *valideren* dat de velden die verstuurd worden niet leeg zijn. Dan moeten we in de databank de gegevens van het gegeven emailadres gaan opzoeken. Indien we deze gegevens gevonden hebben moeten we controleren of het paswoord dat we in het formulier ontvangen overeenkomt met het paswoord in de databank. Indien dat zo is kunnen we de gebruiker inloggen dmv van een *$_SESSION['user']* variabele.
+
+- **Login gegevens controleren** - login.php
+
+  Bij het verzenden van het login formulieren moeten we eerst *valideren* dat de velden die verstuurd worden niet leeg zijn. Dan moeten we in de databank de gegevens van het gegeven emailadres gaan opzoeken. Indien we deze gegevens gevonden hebben moeten we controleren of het paswoord dat we in het formulier ontvangen overeenkomt met het paswoord in de databank. Indien dat zo is kunnen we de gebruiker inloggen dmv van een *$_SESSION['user']* variabele. Als een gebruiker succesvol ingelogd is moet hij doorverwezen worden naar de *pagina-toevoegen.php* pagina.
 
 ### Flash messages
 
