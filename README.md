@@ -1,11 +1,11 @@
 # Project Dagboek
 
-1. [Inleiding][inleiding]
-2. [Login systeem][login-systeem]
-3. [Flash messages][flash-messages]
-4. [Back-end - CRUD systeem][back-end---crud-systeem]
-5. [Front-end][front-end]
-6. [Extra's][extras]
+1. [Inleiding](#inleiding)
+2. [Login systeem](#login-systeem)
+3. [Flash messages](#flash-messages)
+4. [Back-end - CRUD systeem](#back-end---crud-systeem)
+5. [Front-end](#front-end)
+6. [Extra's](#extras)
 
 ## Inleiding
 
