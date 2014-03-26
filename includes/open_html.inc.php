@@ -8,4 +8,4 @@
   <?php if (!empty($stylesheets)) print_stylesheets($stylesheets); ?>
 </head>
 <body class="<?php if (!empty($body_class)) print $body_class; ?>">
-  <?php include 'includes/navbar.inc'; ?>
+  <?php include 'includes/navbar.inc.php'; ?>

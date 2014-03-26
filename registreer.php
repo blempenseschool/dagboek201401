@@ -1,6 +1,6 @@
 <?php 
 
-include 'includes/config.inc'; // Include config bestand
+include 'includes/config.inc.php'; // Include config bestand
 $active = 'registreer'; // Welke is de huidige pagina aangeduid in de navbar?
 $page_title = 'Aanmelden';
 
@@ -8,11 +8,11 @@ $foutmeldingen = array();
 $success = false;
 
 if ($_POST) {
-  include('includes/registration_validation.inc');
+  include('includes/registration_validation.inc.php');
 
   if (empty($foutmeldingen) && !isset($_POST['honeypot'])) {
     try {
-      include 'includes/dbConnect.inc';
+      include 'includes/dbConnect.inc.php';
       $query = $conn->prepare("INSERT INTO users(naam, email, paswoord) VALUES (:naam, :email, :paswoord)");
       $data = ['naam'     => $_POST['naam'],
                'email'    => $_POST['email'],
@@ -30,7 +30,7 @@ if ($_POST) {
 }
  ?>
 
-<?php include 'includes/open_html.inc'; ?>
+<?php include 'includes/open_html.inc.php'; ?>
 
 <header class="page-header">
   <div class="container">
@@ -76,7 +76,7 @@ if ($_POST) {
         </div> 
       <?php else: ?>
         <form action="<?php print htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post" novalidate>
-          <?php include 'includes/registration_form.inc'; ?>   
+          <?php include 'includes/registration_form.inc.php'; ?>   
           <button type="submit" class="btn btn-default">Registreer</button>
        </form>
       <?php endif ?>
@@ -84,4 +84,4 @@ if ($_POST) {
    </section>
 </div>
 
-<?php include 'includes/close_html.inc'; ?>  
+<?php include 'includes/close_html.inc.php'; ?>  

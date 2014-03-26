@@ -9,4 +9,4 @@
   </div>
 </div> 
 
-<?php include 'includes/pagina_verwijderen_modal.inc'; ?>
+<?php include 'includes/pagina_verwijderen_modal.inc.php'; ?>

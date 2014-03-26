@@ -1,12 +1,12 @@
 <?php 
 
-include 'includes/config.inc'; // Include config bestand
+include 'includes/config.inc.php'; // Include config bestand
 $active = 'index'; // Welke is de huidige pagina aangeduid in de navbar?
 $page_title = 'Mijn dagboek';
 
 ?>
 
-<?php include 'includes/open_html.inc'; ?>
+<?php include 'includes/open_html.inc.php'; ?>
 
     <div class="jumbotron">
         <h1>Jouw eigen digitale dagboek</h1>
@@ -70,4 +70,4 @@ $page_title = 'Mijn dagboek';
       </div>
 
 
-<?php include 'includes/close_html.inc'; ?>  
+<?php include 'includes/close_html.inc.php'; ?>  

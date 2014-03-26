@@ -1,13 +1,13 @@
 <?php 
 
-include 'includes/config.inc'; // Include config bestand
+include 'includes/config.inc.php'; // Include config bestand
 $active = ''; // Welke is de huidige pagina aangeduid in de navbar?
 $page_title = 'Mijn eerste dagboek pagina';
 $body_class = 'concrete-bg';
 
 ?>
 
-<?php include 'includes/open_html.inc'; ?>
+<?php include 'includes/open_html.inc.php'; ?>
 
 <header class="page-header">
   <div class="container">
@@ -17,7 +17,7 @@ $body_class = 'concrete-bg';
 <div class="container">  
   <?php 
     $active_admintab='weergeven'; 
-    include 'includes/admin_tabs.inc'; 
+    include 'includes/admin_tabs.inc.php'; 
   ?>
   <section class="row">
      <div class="col-md-8 col-md-offset-2">
@@ -32,4 +32,4 @@ $body_class = 'concrete-bg';
    </section>
 </div>
 
-<?php include 'includes/close_html.inc'; ?>  
+<?php include 'includes/close_html.inc.php'; ?>  

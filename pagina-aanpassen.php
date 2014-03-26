@@ -1,6 +1,6 @@
 <?php 
 
-include 'includes/config.inc'; // Include config bestand
+include 'includes/config.inc.php'; // Include config bestand
 $active = ''; // Welke is de huidige pagina aangeduid in de navbar?
 $page_title = 'Mijn eerste dagboek pagina';
 $body_class = 'concrete-bg';
@@ -17,7 +17,7 @@ if ($_POST) {
 
 ?>
 
-<?php include 'includes/open_html.inc'; ?>
+<?php include 'includes/open_html.inc.php'; ?>
 
 <header class="page-header">
   <div class="container">
@@ -27,7 +27,7 @@ if ($_POST) {
 <div class="container">  
   <?php 
     $active_admintab='aanpassen'; 
-    include 'includes/admin_tabs.inc'; 
+    include 'includes/admin_tabs.inc.php'; 
   ?>
   <section class="row">
      <div class="col-md-8 col-md-offset-2">
@@ -36,11 +36,11 @@ if ($_POST) {
           <strong>Jammer!</strong> Er zijn foutmeldingen gevonden.
        </div> 
        <form action="">
-         <?php include 'includes/dagboek_form.inc'; ?>
+         <?php include 'includes/dagboek_form.inc.php'; ?>
          <button type="submit" class="btn btn-default">Aanpassen</button>
        </form> 
      </div>
    </section>
 </div>
 
-<?php include 'includes/close_html.inc'; ?>  
+<?php include 'includes/close_html.inc.php'; ?>  

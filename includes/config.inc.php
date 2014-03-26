@@ -14,6 +14,6 @@ $scripts = ['https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js',
 
 
 // Include enkele bestanden die we nodig hebben
-include 'includes/dbConfig.inc';
-include 'includes/dbConnect.inc';
-include 'includes/functions.inc';
+include 'includes/dbConfig.inc.php';
+include 'includes/dbConnect.inc.php';
+include 'includes/functions.inc.php';

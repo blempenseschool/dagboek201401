@@ -17,7 +17,7 @@ Dan kan elk groepje de code terug downloaden zodat iedereen terug "up to date" i
  
 Uiteindelijk zal deze code gepushed worden naar een webserver en moeten we dan tot een werkend geheel komen.
 
-**Databank configuratie**: In het *includes* mapje kan je een bestand *dbConfig.default.inc* terug vinden. Dit bestand moet je dupliceren en hernoemen naar *dbConfig.inc*. Hierin kan je dan jouw databank gegevens invullen.
+**Databank configuratie**: In het *includes* mapje kan je een bestand *dbConfig.default.inc.php* terug vinden. Dit bestand moet je dupliceren en hernoemen naar *dbConfig.inc.php*. Hierin kan je dan jouw databank gegevens invullen.
 
 ## Taken
 

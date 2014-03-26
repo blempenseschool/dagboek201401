@@ -1,13 +1,13 @@
 <?php 
 
-include 'includes/config.inc'; // Include config bestand
+include 'includes/config.inc.php'; // Include config bestand
 $active = 'dagboek'; // Welke is de huidige pagina aangeduid in de navbar?
 $page_title = 'Dagboek';
 $body_class = 'blue-bg';
 
 ?>
 
-<?php include 'includes/open_html.inc'; ?>
+<?php include 'includes/open_html.inc.php'; ?>
 
 <header class="page-header">
   <div class="container">
@@ -53,4 +53,4 @@ $body_class = 'blue-bg';
    </section>
 </div>
 
-<?php include 'includes/close_html.inc'; ?>  
+<?php include 'includes/close_html.inc.php'; ?>  

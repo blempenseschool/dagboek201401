@@ -1,6 +1,6 @@
 <?php 
 
-include 'includes/config.inc'; // Include config bestand
+include 'includes/config.inc.php'; // Include config bestand
 $active = 'pagina-toevoegen'; // Welke is de huidige pagina aangeduid in de navbar?
 $page_title = 'Schrijf een nieuwe pagina';
 $body_class = 'asphalt-bg';
@@ -16,7 +16,7 @@ if ($_POST) {
 }
  ?>
 
-<?php include 'includes/open_html.inc'; ?>
+<?php include 'includes/open_html.inc.php'; ?>
 
 <header class="page-header">
   <div class="container">
@@ -27,7 +27,7 @@ if ($_POST) {
   <section class="row">
     <div class="col-md-7">
         <form action="<?php print htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post" novalidate>
-          <?php include 'includes/dagboek_form.inc'; ?>   
+          <?php include 'includes/dagboek_form.inc.php'; ?>   
           <button type="submit" class="btn btn-default">Voeg toe</button>
        </form>
      </div>
@@ -47,4 +47,4 @@ if ($_POST) {
    </section>
 </div>
 
-<?php include 'includes/close_html.inc'; ?>  
+<?php include 'includes/close_html.inc.php'; ?>  

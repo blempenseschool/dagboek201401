@@ -1,6 +1,6 @@
 <?php 
 
-include 'includes/config.inc'; // Include config bestand
+include 'includes/config.inc.php'; // Include config bestand
 $active = 'Zoek gebruiker'; // Welke is de huidige pagina aangeduid in de navbar?
 $page_title = "Zoek gebruiker";
 $body_class = 'turq-bg';
@@ -9,7 +9,7 @@ $body_class = 'turq-bg';
 
 ?>
 
-<?php include 'includes/open_html.inc'; ?>
+<?php include 'includes/open_html.inc.php'; ?>
 
 <header class="page-header">
   <div class="container">
@@ -35,4 +35,4 @@ $body_class = 'turq-bg';
    </section>
 </div>
 
-<?php include 'includes/close_html.inc'; ?>  
+<?php include 'includes/close_html.inc.php'; ?>  

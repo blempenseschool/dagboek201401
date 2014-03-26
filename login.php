@@ -1,6 +1,6 @@
 <?php 
 
-include 'includes/config.inc'; // Include config bestand
+include 'includes/config.inc.php'; // Include config bestand
 $active = 'login'; // Welke is de huidige pagina aangeduid in de navbar?
 $page_title = 'Login';
 $body_class = 'concrete-bg';
@@ -17,7 +17,7 @@ if ($_POST) {
 }
  ?>
 
-<?php include 'includes/open_html.inc'; ?>
+<?php include 'includes/open_html.inc.php'; ?>
 
 <header class="page-header">
   <div class="container">
@@ -32,7 +32,7 @@ if ($_POST) {
           <strong>Probeer opnieuw!</strong> De login gegevens waren niet juist.
         </div> 
         <form action="<?php print htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post" novalidate class="form-horizontal">
-          <?php include 'includes/login_form.inc'; ?>   
+          <?php include 'includes/login_form.inc.php'; ?>   
           <div class="form-group">
             <div class="col-sm-offset-2 col-sm-10">
               <button type="submit" class="btn btn-default">Log nu in</button>
@@ -43,4 +43,4 @@ if ($_POST) {
    </section>
 </div>
 
-<?php include 'includes/close_html.inc'; ?>  
+<?php include 'includes/close_html.inc.php'; ?>  
