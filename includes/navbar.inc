@@ -13,7 +13,7 @@
       <ul class="nav navbar-nav">
         <li class="<?php if($active == 'registreer') print 'active'; ?>"><a href="registreer.php">Registreer</a></li>
         <li class="<?php if($active == 'nieuwe-paginas') print 'active'; ?>"><a href="nieuwe-paginas.php">Nieuwe pagina's</a></li>
-        <li class="<?php if($active == 'dashboard') print 'active'; ?>"><a href="dashboard.php">Dashboard</a></li>
+        <li class="<?php if($active == 'dagboek') print 'active'; ?>"><a href="dagboek.php">Dagboek</a></li>
         <li class="<?php if($active == 'pagina-toevoegen') print 'active'; ?>"><a href="pagina-toevoegen.php">Nieuwe pagina</a></li>
         <li class="<?php if($active == 'dagboek-beheren') print 'active'; ?>"><a href="dagboek-beheren.php">Beheer dagboek</a></li>
       </ul>
@@ -28,7 +28,7 @@
             <li><a href="logout.php">Logout</a></li>
             <li class="divider"></li>
             <li class="dropdown-header">Handelingen</li>
-            <li><a href="dashboard.php">Bekijk dashboard</a></li>
+            <li><a href="dagboek.php">Bekijk dagboek</a></li>
             <li><a href="pagina-toevoegen.php">Nieuwe pagina schrijven</a></li>
             <li><a href="dagboek-beheren.php">Dagboek beheren</a></li>
             <li><a href="zoek-gebruiker.php">Gebruiker zoeken</a></li>
