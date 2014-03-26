@@ -17,6 +17,8 @@ Dan kan elk groepje de code terug downloaden zodat iedereen terug "up to date" i
  
 Uiteindelijk zal deze code gepushed worden naar een webserver en moeten we dan tot een werkend geheel komen.
 
+**Databank configuratie**: In het *includes* mapje kan je een bestand *dbConfig.default.inc* terug vinden. Dit bestand moet je dupliceren en hernoemen naar *dbConfig.inc*. Hierin kan je dan jouw databank gegevens invullen.
+
 ## Taken
 
 Elk groepje zal enkele taken aangewezen krijgen. Probeer niet onmiddelijk te programmeren maar denk eerst even na over wat er moet gebeuren en hoe je dit zou kunnen vertalen naar PHP. Begin met commentaar code te schrijven die beschrijft wat de code moet doen. Vertaal deze commentaar code dan stap voor stap naar PHP code. Zorg ook dat je elke stap voldoende documenteert adhv commentaar zodat de volgende groep snel jouw code kan begrijpen en hierop kan verderwerken.
@@ -25,7 +27,7 @@ Elk groepje zal enkele taken aangewezen krijgen. Probeer niet onmiddelijk te pro
 
 ### Login systeem
 
-Het  
+Het login systeem maakt gebruik van de *$_SESSION[]* variabele van PHP. Deze variabele is een array die we over meerdere pagina's heen kunnen gebruiken. Het enige dat we moeten doen is op elke pagina bovenaan, als eerste regel code, de functie *session_start()* plaatsen.
 
 - **Paswoord beveiliging dmv van de CRYPT functie van PHP** - registreer.php
 
@@ -37,15 +39,43 @@ Het
 
 ### Flash messages
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, quibusdam, dolor, animi doloribus vitae in atque perferendis sed officiis dolore quam eveniet porro facere obcaecati quia ea distinctio sapiente architecto.
+We gaan het "geheugen" van PHP niet enkel gebruiken om gegevens van de ingelogde gebruiker te onthouden, maar we kunnen het geheugen ook gebruiken om berichten door te sturen naar de volgende pagina. Zo kunnen we ,bv. als het toevoegen van een pagina gelukt is, een bericht sturen naar de volgende pagina en aan de gebruiker een melding tonen dat het toevoegen gelukt is. Normaal gezien kan je in PHP enkel op dezelfde pagina jouw foutmeldingen of berichten tonen. Op deze manier kunnen we flexibeler omgaan met deze berichten.
+
+- **Een functie aanmaken om een bericht te versturen** - flashAlert($tekst, $type)
+
+  Om het ons gemakkelijk te maken gaan we een functie aanmaken waarin we een bericht kunnen versturen naar de volgende pagina. We geven de tekst en het type van het bericht mee. Deze berichten worden in een *$_SESSION['flash']* variabele bijgehouden. De array die we hieraan meegeven bestaat uit een variabele *tekst* en een variabele *type*.
+
+- **Een functie aanmaken om berichten te tonen** - toonFlashAlerts()
+
+  Naast het versturen van de alert maken we ook een functie die het ons gemakkelijk maakt om de HTML van de alert te tonen. Deze functie voegen we dan ook toe op elke pagina.
+
+- **Een functie aanmaken om het doorsturen naar andere pagina's gemakkelijker te maken** - redirect_naar($to, $tekst, $type) 
+
+  Deze functie zal het gemakkelijker maken voor ons om gebruikers door te sturen naar andere pagina's. Zo hoeven we niet telkens gebruik te maken van de header('location:') functie. We maken de functie op zo'n manier dat we er een alert aan kunnen koppelen die we op de volgende pagina kunnen tonen.
 
 ### Back-end - CRUD systeem
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, porro et eius sit facere voluptate quos ipsa facilis ut saepe! Recusandae, eum nihil corporis nesciunt eos rerum quaerat rem esse?
+Nu de login functionaliteit en flash messages werken kunnen we beginnen aan de CRUD functionaliteit van onze website. We moeten het mogelijk maken voor onze gebruikers om nieuwe pagina's toe te voegen in hun dagboek. Maar ze moeten ook de mogelijkheid hebben om bestaande pagina's aan te passen en te verwijderen. 
+
+- **Nieuwe pagina's toevoegen** - pagina-toevoegen.php
+
+  Voor deze pagina zullen we eerst **formulier validatie** moeten toevoegen. Deze validatie plaatsen we ook in een nieuwe bestand zodat we dit gemakkelijk op andere pagina's ook kunnen inladen. De *titel* en de *inhoud* zijn **verplicht**. Zorg er ook voor dat alle inhouden terug ingevuld worden in het formulier, en dat de foutmeldingen getoont worden. Denk ook aan de 'has-error' css klasse die toegevoegd moet worden indien er een foutmelding bestaat voor het formulierelement.
+
+  Dan moeten we gegevens toevoegen aan de databank. Dit doen we met een *prepared query* van PDO. Je moet ook de userID van de ingelogde gebruiker meegeven aan de query. Indien het toevoegen gelukt is ga je de gebruiker, met een bericht, doorsturen naar *pagina-bekijken.php*. Indien het niet gelukt is maak je een *flashAlert* aan en toon je dezelfde pagina opnieuw met een foutmelding dat de gebruiker opnieuw moet proberen.
+
+- **Pagina's weergeven** - pagina-bekijken.php
+
+- **Pagina's aanpassen** - pagina-aanpassen.php
+
+- **Pagina's verwijderen** - pagina-verwijderen.php
+
+- **Dagboek beheren** - dagboek-beheren.php
 
 ### Front-end
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, molestiae, sed modi adipisci provident quae assumenda earum similique illum saepe minus incidunt nostrum possimus facilis beatae suscipit nam ullam a!
+Nu we de back-end van de website achter de rug hebben, kunnen we aan de slag met de front-end. Deze pagina's kunnen ook niet-ingelogde gebruikers bekijken.
+
+- **Dagboek bekijken**: dashboard.php
 
 ### Extra's
 
