@@ -1,4 +1,6 @@
 <?php 
 
 // Database username en wachtwoord - beide "root" voor MAMP
-$dbUsername = $dbPassword = "root";
+$dbUsername = 'root';
+$dbPassword = "root";
+$dbName = 'mijn_dagboek';

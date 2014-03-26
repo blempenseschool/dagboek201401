@@ -5,6 +5,10 @@ if (!isset($dbUsername) && !isset($dbPassword)) {
   $dbUsername = $dbPassword = "root";
 }
 
+if (!isset($dbName)) {
+  $dbName = 'mijn_dagboek';
+}
+
 // Nieuwe database connectie aanmaken
-$conn = new PDO('mysql:host=localhost;dbname=mijn_dagboek', $dbUsername, $dbPassword);
+$conn = new PDO("mysql:host=localhost;dbname=$dbName", $dbUsername, $dbPassword);
 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);

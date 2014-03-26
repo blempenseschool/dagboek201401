@@ -25,7 +25,7 @@ Elk groepje zal enkele taken aangewezen krijgen. Probeer niet onmiddelijk te pro
 
 ### Login systeem
 
-Het 
+Het  
 
 - **Paswoord beveiliging dmv van de CRYPT functie van PHP** - registreer.php
 
