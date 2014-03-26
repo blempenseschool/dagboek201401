@@ -75,8 +75,20 @@ Nu de login functionaliteit en flash messages werken kunnen we beginnen aan de C
 
 Nu we de back-end van de website achter de rug hebben, kunnen we aan de slag met de front-end. Deze pagina's kunnen ook niet-ingelogde gebruikers bekijken.
 
-- **Dagboek bekijken**: dashboard.php
+- **Dagboek bekijken**: dagboek.php
+
+- **Nieuwste pagina's van alle dagboeken**: nieuwe-paginas.php
+
+- **Paginatie toevoegen aan pagina's**: dagboek.php, nieuwe-paginas.php (en dagboek-beheren.php)
 
 ### Extra's
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, explicabo, quia magnam suscipit totam quibusdam amet autem a mollitia magni expedita sunt reiciendis aperiam quod odit esse harum natus ratione.
+Nu onze website bijna klaar is kunnen we nog nieuwe functionaliteit gaan toevoegen. 
+
+- **Het gebruik van Markdown**
+
+- **De index pagina**
+
+- **Gebruiker onmiddelijk inloggen na registratie**
+
+- **Gebruikers zoeken**
